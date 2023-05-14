@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Profile</title>
+</head>
+<body>
+<h1>Profile</h1>
+
+<a href="/">Retour</a>
+<a href="/logout">logout</a>
+
+<h2>My account</h2>
+
+<form method="POST" action="/profile">
+  <input type="text" name="name" placeholder="#{name}"/>
+  <input type="email" name="email" placeholder="email"/>
+  <button type="submit">change info</button>
+</form>
+
+<form method="POST" action="/delete-profile">
+  <button type="submit">Supprimer mon compte</button>
+</form>
+
+
+</body>
+</html>
